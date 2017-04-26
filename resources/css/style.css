@@ -1,27 +1,29 @@
 html {
   font-size: 16px;
   line-height: 1.2;
-  background: url(../images/skylinedawn.jpg) no-repeat center center fixed;
+}
+
+body {
+  background: url(../images/skylinedawn.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.banner {
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
   width: 100%;
-  height: auto;
-  margin-top: 25%;
+  height: 100%;
 }
 
 .bannerText {
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 2rem;
   width: 30rem;
@@ -69,6 +71,11 @@ html {
   border-bottom: 2px solid rgb(255, 253, 208);
   padding: 2rem 2rem 0.5rem 2rem;
   margin-bottom: 1rem;
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+     -o-animation: fadein 5s; /* Opera < 12.1 */
+        animation: fadein 5s;
 }
 
 .subText {
@@ -81,6 +88,11 @@ html {
   color: rgb(255, 253, 208);
   font-family: "Arial", sans-serif;
   font-size: 1rem;
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+   -moz-animation: fadein 5s; /* Firefox < 16 */
+    -ms-animation: fadein 5s; /* Internet Explorer */
+     -o-animation: fadein 5s; /* Opera < 12.1 */
+        animation: fadein 5s;
 }
 
 .photoCred {
